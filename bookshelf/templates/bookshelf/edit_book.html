@@ -1,0 +1,20 @@
+
+
+{% extends 'bookshelf/index.html' %}
+
+{%block content%}
+<h1>Edit Book</h1>
+<label>Title:</label>
+<!-- QUOTATIONS AROUND VALUE -->
+<!-- VALUE WILL POPULATE THE FORM FOR YOU with whatever value you want!-->
+<input id = "newTitle" value = "{{book.title}}"></input>
+<br>
+<label>Author:</label>
+<input id = "newAuthor" value = "{{book.author}}"></input>
+<br>
+<label>Description:</label>
+<input id = "newDescription" value = "{{book.description}}"></input>
+<br>
+<!-- References js, note the extension at the top of the file -->
+<button onClick = "{editBook();}">Submit!</button>
+{% endblock %}

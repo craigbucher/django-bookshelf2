@@ -1,0 +1,17 @@
+{% extends 'bookshelf/index.html' %}
+
+{% block content %}
+<!-- WE DON"T WORRY ABOUT THE GENRE, PRE-DETERMINED -->
+<h1>Add New Book</h1>
+<label>Title:</label>
+<input id = "newTitle"></input>
+<br>
+<label>Author:</label>
+<input id = "newAuthor"></input>
+<br>
+<label>Description:</label>
+<input id = "newDescription"></input>
+<br>
+<!-- References js, note the extension at the top of the file -->
+<button onClick = "{saveBook();}">Submit!</button>
+{% endblock %}
